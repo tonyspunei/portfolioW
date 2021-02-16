@@ -631,7 +631,7 @@ button:hover,
 }
 
 .aboutMe {
-  min-height: 120vh;
+  min-height: 125vh;
   max-height: 140vh;
   background: url("/Images/background Image - about me Page.png");
   background-size: cover;
@@ -811,5 +811,110 @@ button:hover,
   font-size: 18px;
   font-weight: 600;
   color: #0c0a5d;
+}
+
+.mySkills {
+  min-height: 110vh;
+  max-height: 130vh;
+  background: #f1f4fb;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 40em) {
+  .mySkills {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+.mySkills__titleText .descTitle {
+  font-size: 1rem;
+  margin: 0px;
+  padding-top: 70px;
+  margin-bottom: 22px;
+}
+
+@media (min-width: 64em) {
+  .mySkills__titleText .descTitle {
+    padding-top: 108px;
+  }
+}
+
+.mySkills__titleText .sectTitle {
+  font-size: 38px;
+  margin: 0px;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 64em) {
+  .mySkills__titleText .sectTitle {
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 64em) {
+  .mySkills__skillBoxes {
+    padding-left: 220px;
+    padding-right: 220px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (min-width: 64em) {
+  .mySkills__skillBoxes__firstColumn {
+    width: 42%;
+  }
+}
+
+@media (min-width: 64em) {
+  .mySkills__skillBoxes__secondColumn {
+    width: 42%;
+  }
+}
+
+.mySkills__skillBoxes .box {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 40em) {
+  .mySkills__skillBoxes .box {
+    margin-bottom: 80px;
+  }
+}
+
+.mySkills__skillBoxes .box .boxText {
+  margin-bottom: 20px;
+}
+
+.mySkills__skillBoxes .box .boxText p {
+  margin: 0px;
+  color: #0c0a5d;
+  font-weight: 600;
+}
+
+.mySkills__skillBoxes .box .levelLine {
+  height: 11px;
+  width: 100%;
+  background: #ff9442;
+  position: relative;
+}
+
+.mySkills__skillBoxes .box .levelLine::after {
+  content: "";
+  height: 11px;
+  width: 10%;
+  background: #d9d9d9;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
 }
 /*# sourceMappingURL=style.css.map */

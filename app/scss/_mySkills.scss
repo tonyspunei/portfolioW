@@ -1,0 +1,93 @@
+.mySkills {
+  min-height: 110vh;
+  max-height: 130vh;
+  background: #f1f4fb;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  @include breakpoint-up(medium) {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  &__titleText {
+    .descTitle {
+      font-size: 1rem;
+      margin: 0px;
+      padding-top: 70px;
+      margin-bottom: 22px;
+
+      @include breakpoint-up(large) {
+        padding-top: 108px;
+      }
+    }
+
+    .sectTitle {
+      font-size: 38px;
+      margin: 0px;
+      margin-bottom: 50px;
+
+      @include breakpoint-up(large) {
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  &__skillBoxes {
+    @include breakpoint-up(large) {
+      padding-left: 220px;
+      padding-right: 220px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__firstColumn {
+      @include breakpoint-up(large) {
+        width: 42%;
+      }
+    }
+
+    &__secondColumn {
+      @include breakpoint-up(large) {
+        width: 42%;
+      }
+    }
+
+    .box {
+      width: 100%;
+      margin-bottom: 50px;
+
+      @include breakpoint-up(medium) {
+        margin-bottom: 80px;
+      }
+
+      .boxText {
+        margin-bottom: 20px;
+        p {
+          margin: 0px;
+          color: $veryDarkBlue;
+          font-weight: 600;
+        }
+      }
+
+      .levelLine {
+        height: 11px;
+        width: 100%;
+        background: $orange;
+        position: relative;
+
+        &::after {
+          content: "";
+          height: 11px;
+          width: 10%;
+          background: $lightGrey;
+          position: absolute;
+          right: 0px;
+          top: 0px;
+          bottom: 0px;
+        }
+      }
+    }
+  }
+}
