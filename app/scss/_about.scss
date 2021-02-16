@@ -1,0 +1,181 @@
+.aboutMe {
+  min-height: 120vh;
+  max-height: 140vh;
+  background: url("/Images/background\ Image\ -\ about\ me\ Page.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  @include breakpoint-up(medium) {
+    min-height: 80vh;
+    max-height: 100vh;
+  }
+
+  @include breakpoint-up(large) {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+  }
+
+  &__image {
+    min-height: 15.6875rem;
+    width: 100%;
+    background: url("/Images/horizontal-shot-stupefied-young-man-looks\ -\ mobileImage.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include breakpoint-up(medium) {
+      min-height: 24.688rem;
+    }
+
+    @include breakpoint-up(large) {
+      background: url("/Images/look-right-image\ -\ desktopImg.png");
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      max-height: 30.125rem;
+      max-width: 22.5rem;
+
+      margin-left: 13.813rem;
+      position: relative;
+      top: 0px;
+      min-height: 479px;
+
+      &::before {
+        content: "";
+        height: 76px;
+        width: 76px;
+        // background: orange;
+        border-top: 3px solid $orange;
+        border-left: 3px solid $orange;
+        position: absolute;
+        top: -6px;
+        left: -6px;
+      }
+
+      &::after {
+        content: "";
+        height: 76px;
+        width: 76px;
+        // background: orange;
+        border-bottom: 3px solid $orange;
+        border-right: 3px solid $orange;
+        position: absolute;
+        bottom: -6px;
+        right: -6px;
+      }
+    }
+  }
+
+  &__textSection {
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    @include breakpoint-up(large) {
+      text-align: start;
+      padding: 0px;
+      padding-left: 79px;
+    }
+
+    &__text {
+    }
+
+    & .descTitle {
+      margin: 0px;
+      margin-top: 1.8125rem; // 29px
+      margin-bottom: 1.1875rem; // 19px
+    }
+
+    & .sectTitle {
+      margin: 0px;
+      margin-bottom: 21px;
+    }
+
+    & .longdesc {
+      font-size: 12px;
+      line-height: 18px;
+      font-weight: 600;
+      color: $darkGrey;
+
+      @include breakpoint-up(large) {
+        width: 420px;
+      }
+    }
+
+    &__personalInfo {
+      padding-top: 22px;
+      padding-right: 39px;
+      padding-bottom: 55px;
+      padding-left: 39px;
+
+      @include breakpoint-up(large) {
+        padding: 0px;
+      }
+
+      .firstRow {
+        .icon {
+          margin-right: 10px;
+        }
+      }
+
+      .title {
+        font-size: $font-sm;
+        font-weight: 600;
+      }
+
+      .equalSign {
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+
+      .actualInfo {
+        font-size: 16px;
+      }
+
+      &__name {
+      }
+
+      &__phone {
+        .phone {
+          &__icon {
+            margin-right: 5px !important;
+          }
+        }
+      }
+
+      &__email {
+      }
+    }
+    &__myInterests {
+      text-align: start;
+      flex-direction: column;
+
+      .sectTitleInterests {
+        color: $veryDarkBlue;
+        margin-bottom: 0px;
+      }
+
+      .activities {
+        flex-wrap: wrap;
+
+        .activity {
+          &:not(:last-child) {
+            margin-right: 31px;
+          }
+
+          svg {
+            margin-right: 10px;
+          }
+
+          p {
+            font-size: 18px;
+            font-weight: 600;
+            color: $veryDarkBlue;
+          }
+        }
+      }
+    }
+  }
+}

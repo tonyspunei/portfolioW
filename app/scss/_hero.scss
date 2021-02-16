@@ -1,0 +1,254 @@
+.hero {
+  min-height: 100vh;
+  max-width: 120vh;
+
+  @include breakpoint-up(medium) {
+    min-height: 66vh;
+    max-height: 83vh;
+  }
+
+  @include breakpoint-up(large) {
+    display: flex;
+    margin-left: 22.0625rem;
+    margin-right: 10.125rem;
+    position: relative;
+  }
+
+  &__image {
+    min-height: 13.4375rem;
+    background: url("/Images/sergio-de-paula-c_GmwfHBDzk-unsplash\ -\ mobileImage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    @include breakpoint-up(medium) {
+      min-height: 18rem;
+    }
+
+    @include breakpoint-up(large) {
+      flex: 1;
+      order: 2;
+      background: url("/Images/professional-png-images-6\ -\ desktopImg.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+      height: 36.125rem;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    @include breakpoint-up(large) {
+      flex: 1;
+      text-align: start;
+      padding: 0px;
+      padding-top: 5rem;
+    }
+
+    .descTitle {
+      margin-top: 2.125rem;
+      margin-bottom: 0.375rem;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.8125rem; // 45px
+      color: $veryDarkBlue;
+      margin-bottom: 1rem;
+    }
+
+    .jobName {
+      font-size: 1.3125rem; // 21px
+      color: $veryDarkBlue;
+      margin-top: 0px;
+    }
+
+    .descText {
+      font-size: 0.75rem;
+      color: $darkGrey;
+      font-weight: 600;
+      margin-bottom: 2.6875rem;
+    }
+
+    &__buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 3.4375rem; // 55px
+
+      @include breakpoint-up(large) {
+        flex-direction: row;
+        align-items: flex-start;
+      }
+
+      .downloadBtn {
+        margin-bottom: 1.125rem;
+
+        @include breakpoint-up(large) {
+          margin-bottom: 0px;
+          margin-right: 1.6875rem;
+        }
+      }
+
+      .contactMe {
+        background: $white;
+        border: 1px solid $orange;
+        color: $veryDarkBlue;
+      }
+    }
+  }
+
+  &__cta {
+    height: 3.25rem;
+    width: 19.4375rem;
+
+    @include breakpoint-up(large) {
+      width: 9.8125rem;
+    }
+  }
+
+  &__socials {
+    display: none;
+    position: absolute;
+    left: -17.0625rem;
+    top: 10.3125rem;
+
+    @include breakpoint-up(large) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__icon {
+      height: 1.5625rem;
+
+      &:not(:last-child) {
+        margin-bottom: 1.5rem;
+      }
+
+      svg {
+        height: 100%;
+        fill: $veryDarkBlue;
+
+        &:hover {
+          fill: $orange;
+        }
+      }
+
+      .moreHeight {
+        height: 2rem;
+      }
+    }
+  }
+
+  &__specials {
+    height: 9rem;
+    width: 100%;
+    background: #ffffff;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    @include breakpoint-up(medium) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    @include breakpoint-up(large) {
+      position: absolute;
+      bottom: -2.625rem;
+      left: -6.25rem;
+      border-radius: 10rem;
+      min-width: 61.25rem;
+      min-height: 9.25rem;
+    }
+
+    // &:not(:last-child) {
+    //   border-right: 1px solid $darkGrey;
+    // }
+
+    &__experience {
+      height: 2.3125rem;
+      padding-right: 1.5rem;
+      border-right: 1px solid $darkGrey;
+
+      @include breakpoint-up(medium) {
+        padding-right: 2.625rem;
+      }
+
+      @include breakpoint-up(large) {
+        height: 5.4375rem;
+        width: 16.75rem;
+      }
+    }
+
+    &__projects {
+      height: 2.3125rem; // 37px
+      padding-right: 1.5rem; // 24px
+      border-right: 1px solid $darkGrey;
+
+      @include breakpoint-up(medium) {
+        padding-right: 2.625rem;
+      }
+
+      @include breakpoint-up(large) {
+        height: 5.4375rem; // 87px
+        width: 21.0625rem; // 337px
+      }
+    }
+
+    &__support {
+      height: 2.3125rem; // 37px
+
+      @include breakpoint-up(medium) {
+        width: 8.125rem; // 130px
+      }
+
+      @include breakpoint-up(large) {
+        height: 5.4375rem; // 87px
+        width: 18.1875rem; // 291px
+      }
+    }
+
+    .orangeIcon {
+      height: 1.75rem; // 28px
+
+      @include breakpoint-up(medium) {
+        height: 2.625rem; // 42px
+      }
+
+      @include breakpoint-up(large) {
+        height: 3.8125rem; // 61px
+        margin-left: 4.3125rem; // 69px
+      }
+    }
+
+    .specialsText {
+      p {
+        font-size: 0.625rem; // 10px
+        margin: 0;
+        margin-left: 0.1875rem; // 3px
+        color: $veryDarkBlue;
+        font-weight: 600;
+
+        @include breakpoint-up(medium) {
+          font-size: 0.8125rem; // 13px
+          margin-left: 0.4375rem; // 7px
+        }
+
+        @include breakpoint-up(large) {
+          font-size: $font-sm;
+          margin-left: 0.75rem; // 12px
+        }
+      }
+
+      .underTitle {
+        color: $orange;
+        font-weight: 400;
+        font-size: 0.6875rem; // 11px
+      }
+    }
+  }
+}
