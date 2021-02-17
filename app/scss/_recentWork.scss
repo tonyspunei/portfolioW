@@ -1,0 +1,152 @@
+.recentWork {
+  border-top: 4px solid #000000;
+  min-height: 100vh;
+  background: #f1f4fb;
+  text-align: center;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  &__titleText {
+    text-align: center;
+    .descTitle {
+      font-size: 1rem;
+      margin: 0px;
+      padding-top: 3.3125rem; // 53px
+      margin-bottom: 1.125rem; // 18px
+
+      @include breakpoint-up(large) {
+        padding-top: 5.8125rem; // 93px
+      }
+    }
+
+    .sectTitle {
+      font-size: 2.375rem; // 38px
+      margin: 0px;
+      margin-bottom: 1.8125rem; // 29px
+
+      @include breakpoint-up(large) {
+        margin-bottom: 1.125rem; // 60px
+      }
+    }
+  }
+
+  &__searchFilter {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    text-align: center;
+
+    margin-bottom: 48px;
+
+    a {
+      margin: 1rem;
+      color: $veryDarkBlue;
+      font-weight: 600;
+
+      &:not(:last-child) {
+        margin-right: 36px; // 36px
+
+        @include breakpoint-up(large) {
+          margin-right: 32px; // 32px
+        }
+      }
+
+      &:hover {
+        color: $orange;
+      }
+    }
+  }
+
+  &__images {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include breakpoint-up(large) {
+      &__firstColumn {
+        width: 100%;
+        @include breakpoint-up(large) {
+          display: flex;
+          justify-content: center;
+        }
+      }
+
+      &__secondColumn {
+        width: 100%;
+        @include breakpoint-up(large) {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+
+    .image {
+      background: url("/Images/oliver-pecker-HONJP8DyiSM-unsplash.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+
+      height: 225px;
+      width: 263px;
+
+      @include breakpoint-up(medium) {
+        height: 334px;
+        width: 416px;
+      }
+
+      border-radius: 6px;
+      margin-bottom: 40px;
+
+      @include breakpoint-up(large) {
+        height: 225px;
+        width: 263px;
+
+        &:not(:last-child) {
+          margin-right: 23px;
+        }
+
+        margin-bottom: 23px;
+      }
+    }
+
+    .image2 {
+      background: url("/Images/james-lewis-_ptlyVR3pb0-unsplash.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    .image3 {
+      background: url("/Images/daniel-korpai-mxPiMiz7KCo-unsplash.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    .image4 {
+      background: url("/Images/luis-felipe-lins-hF07reVTNSU-unsplash.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    .image5 {
+      background: url("/Images/kevin-bhagat-0CDP_vQhD-Y-unsplash.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    .image6 {
+      background: url("/Images/ramiro-mendes-CjS3QsRuxnE-unsplash.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+}

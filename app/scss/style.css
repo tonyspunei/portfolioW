@@ -924,4 +924,190 @@ button:hover,
   top: 0px;
   bottom: 0px;
 }
+
+.recentWork {
+  border-top: 4px solid #000000;
+  min-height: 100vh;
+  background: #f1f4fb;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.recentWork__titleText {
+  text-align: center;
+}
+
+.recentWork__titleText .descTitle {
+  font-size: 1rem;
+  margin: 0px;
+  padding-top: 3.3125rem;
+  margin-bottom: 1.125rem;
+}
+
+@media (min-width: 64em) {
+  .recentWork__titleText .descTitle {
+    padding-top: 5.8125rem;
+  }
+}
+
+.recentWork__titleText .sectTitle {
+  font-size: 2.375rem;
+  margin: 0px;
+  margin-bottom: 1.8125rem;
+}
+
+@media (min-width: 64em) {
+  .recentWork__titleText .sectTitle {
+    margin-bottom: 1.125rem;
+  }
+}
+
+.recentWork__searchFilter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: auto;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.recentWork__searchFilter a {
+  margin: 1rem;
+  color: #0c0a5d;
+  font-weight: 600;
+}
+
+.recentWork__searchFilter a:not(:last-child) {
+  margin-right: 36px;
+}
+
+@media (min-width: 64em) {
+  .recentWork__searchFilter a:not(:last-child) {
+    margin-right: 32px;
+  }
+}
+
+.recentWork__searchFilter a:hover {
+  color: #ff9442;
+}
+
+.recentWork__images {
+  height: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 64em) {
+  .recentWork__images__firstColumn {
+    width: 100%;
+  }
+}
+
+@media (min-width: 64em) and (min-width: 64em) {
+  .recentWork__images__firstColumn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 64em) {
+  .recentWork__images__secondColumn {
+    width: 100%;
+  }
+}
+
+@media (min-width: 64em) and (min-width: 64em) {
+  .recentWork__images__secondColumn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.recentWork__images .image {
+  background: url("/Images/oliver-pecker-HONJP8DyiSM-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 225px;
+  width: 263px;
+  border-radius: 6px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 40em) {
+  .recentWork__images .image {
+    height: 334px;
+    width: 416px;
+  }
+}
+
+@media (min-width: 64em) {
+  .recentWork__images .image {
+    height: 225px;
+    width: 263px;
+    margin-bottom: 23px;
+  }
+  .recentWork__images .image:not(:last-child) {
+    margin-right: 23px;
+  }
+}
+
+.recentWork__images .image2 {
+  background: url("/Images/james-lewis-_ptlyVR3pb0-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.recentWork__images .image3 {
+  background: url("/Images/daniel-korpai-mxPiMiz7KCo-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.recentWork__images .image4 {
+  background: url("/Images/luis-felipe-lins-hF07reVTNSU-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.recentWork__images .image5 {
+  background: url("/Images/kevin-bhagat-0CDP_vQhD-Y-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.recentWork__images .image6 {
+  background: url("/Images/ramiro-mendes-CjS3QsRuxnE-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 /*# sourceMappingURL=style.css.map */

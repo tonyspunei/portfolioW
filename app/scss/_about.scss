@@ -79,9 +79,6 @@
       padding-left: 79px;
     }
 
-    &__text {
-    }
-
     & .descTitle {
       margin: 0px;
       margin-top: 1.8125rem; // 29px
@@ -134,18 +131,12 @@
         font-size: 16px;
       }
 
-      &__name {
-      }
-
       &__phone {
         .phone {
           &__icon {
             margin-right: 5px !important;
           }
         }
-      }
-
-      &__email {
       }
     }
     &__myInterests {
