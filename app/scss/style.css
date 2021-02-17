@@ -703,7 +703,7 @@ button:hover,
     border-bottom: 3px solid #ff9442;
     border-right: 3px solid #ff9442;
     position: absolute;
-    bottom: -6px;
+    bottom: -7px;
     right: -6px;
   }
 }
@@ -832,32 +832,32 @@ button:hover,
 .mySkills__titleText .descTitle {
   font-size: 1rem;
   margin: 0px;
-  padding-top: 70px;
-  margin-bottom: 22px;
+  padding-top: 4.375rem;
+  margin-bottom: 1.375rem;
 }
 
 @media (min-width: 64em) {
   .mySkills__titleText .descTitle {
-    padding-top: 108px;
+    padding-top: 6.75rem;
   }
 }
 
 .mySkills__titleText .sectTitle {
-  font-size: 38px;
+  font-size: 2.375rem;
   margin: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
 
 @media (min-width: 64em) {
   .mySkills__titleText .sectTitle {
-    margin-bottom: 60px;
+    margin-bottom: 3.75rem;
   }
 }
 
 @media (min-width: 64em) {
   .mySkills__skillBoxes {
-    padding-left: 220px;
-    padding-right: 220px;
+    padding-left: 13.75rem;
+    padding-right: 13.75rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -881,17 +881,24 @@ button:hover,
 
 .mySkills__skillBoxes .box {
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
 
 @media (min-width: 40em) {
   .mySkills__skillBoxes .box {
-    margin-bottom: 80px;
+    margin-bottom: 5rem;
   }
 }
 
 .mySkills__skillBoxes .box .boxText {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
+  font-size: 0.9375rem;
+}
+
+@media (min-width: 64em) {
+  .mySkills__skillBoxes .box .boxText {
+    font-size: 1.125rem;
+  }
 }
 
 .mySkills__skillBoxes .box .boxText p {
@@ -901,7 +908,7 @@ button:hover,
 }
 
 .mySkills__skillBoxes .box .levelLine {
-  height: 11px;
+  height: 0.6875rem;
   width: 100%;
   background: #ff9442;
   position: relative;
@@ -909,7 +916,7 @@ button:hover,
 
 .mySkills__skillBoxes .box .levelLine::after {
   content: "";
-  height: 11px;
+  height: 0.6875rem;
   width: 10%;
   background: #d9d9d9;
   position: absolute;

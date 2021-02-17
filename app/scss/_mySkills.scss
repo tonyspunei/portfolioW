@@ -15,29 +15,29 @@
     .descTitle {
       font-size: 1rem;
       margin: 0px;
-      padding-top: 70px;
-      margin-bottom: 22px;
+      padding-top: 4.375rem; // 70px
+      margin-bottom: 1.375rem; // 22px
 
       @include breakpoint-up(large) {
-        padding-top: 108px;
+        padding-top: 6.75rem; // 108px
       }
     }
 
     .sectTitle {
-      font-size: 38px;
+      font-size: 2.375rem; // 38px
       margin: 0px;
-      margin-bottom: 50px;
+      margin-bottom: 3.125rem; // 50px
 
       @include breakpoint-up(large) {
-        margin-bottom: 60px;
+        margin-bottom: 3.75rem; // 60px
       }
     }
   }
 
   &__skillBoxes {
     @include breakpoint-up(large) {
-      padding-left: 220px;
-      padding-right: 220px;
+      padding-left: 13.75rem; // 220px
+      padding-right: 13.75rem;
       display: flex;
       justify-content: space-between;
     }
@@ -56,14 +56,19 @@
 
     .box {
       width: 100%;
-      margin-bottom: 50px;
+      margin-bottom: 3.125rem; // 50px
 
       @include breakpoint-up(medium) {
-        margin-bottom: 80px;
+        margin-bottom: 5rem; // 80px
       }
 
       .boxText {
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem; // 20px
+        font-size: 0.9375rem; // 15px
+
+        @include breakpoint-up(large) {
+          font-size: $font-med;
+        }
         p {
           margin: 0px;
           color: $veryDarkBlue;
@@ -72,14 +77,14 @@
       }
 
       .levelLine {
-        height: 11px;
+        height: 0.6875rem; // 11px
         width: 100%;
         background: $orange;
         position: relative;
 
         &::after {
           content: "";
-          height: 11px;
+          height: 0.6875rem; // 11px
           width: 10%;
           background: $lightGrey;
           position: absolute;
