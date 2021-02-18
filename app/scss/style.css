@@ -926,7 +926,6 @@ button:hover,
 }
 
 .recentWork {
-  border-top: 4px solid #000000;
   min-height: 100vh;
   background: #f1f4fb;
   text-align: center;
@@ -1048,6 +1047,7 @@ button:hover,
 }
 
 .recentWork__images .image {
+  position: relative;
   background: url("/Images/oliver-pecker-HONJP8DyiSM-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1109,5 +1109,145 @@ button:hover,
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.getInTouch {
+  min-height: 100vh;
+  padding-left: 1.3125rem;
+  padding-right: 1.3125rem;
+}
+
+@media (min-width: 40em) {
+  .getInTouch {
+    padding-left: 2rem;
+    padding-right: 3rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .getInTouch {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .getInTouch .backgroundImageMap {
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: url("/Images/world-map-146505_1280.png");
+    background-position: center center;
+    background-size: cover;
+    opacity: 0.1;
+  }
+}
+
+.getInTouch__titleText {
+  text-align: center;
+}
+
+.getInTouch__titleText .descTitle {
+  font-size: 1rem;
+  margin: 0px;
+  padding-top: 2.3125rem;
+  margin-bottom: 1.3125rem;
+}
+
+@media (min-width: 64em) {
+  .getInTouch__titleText .descTitle {
+    padding-top: 5.8125rem;
+  }
+}
+
+.getInTouch__titleText .sectTitle {
+  font-size: 2.375rem;
+  margin: 0px;
+  margin-bottom: 1.8125rem;
+}
+
+@media (min-width: 64em) {
+  .getInTouch__titleText .sectTitle {
+    margin-bottom: 3.125rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .getInTouch__inputs {
+    width: 680px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .getInTouch__inputs .firstRow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .getInTouch__inputs .firstRow .nameBox {
+    margin-right: 1rem;
+  }
+}
+
+.getInTouch__inputs .inputBox {
+  height: 46px;
+  width: 100%;
+  border: 1px solid #d9d9d9;
+  margin-bottom: 14px;
+  padding-left: 27px;
+  font-size: 14px;
+  color: #6b6b6b;
+}
+
+.getInTouch__inputs .message {
+  height: 175px;
+  width: 100%;
+  margin-bottom: 28px;
+}
+
+.getInTouch__inputs .message textarea {
+  height: 100%;
+  width: 100%;
+  padding-top: 19px;
+  padding-left: 27px;
+  font-size: 14px;
+  color: #6b6b6b;
+  font-family: "Open Sans", sans-serif;
+  border: 1px solid #d9d9d9;
+}
+
+.getInTouch__inputs .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 64em) {
+  .getInTouch__inputs .button {
+    width: 192px;
+    height: 53px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
