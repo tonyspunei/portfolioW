@@ -114,34 +114,9 @@
         margin-bottom: 23px;
       }
 
-      // .overlay {
-      //   visibility: visible;
-      //   opacity: 1;
-
-      //   background: #ff9442c5;
-      //   height: 100%;
-      //   width: 100%;
-      //   border-radius: 6px;
-
-      //   position: absolute;
-      //   top: 50%;
-      //   left: 50%;
-      //   transform: translate(-50%, -50%);
-
-      //   &__boxIcons {
-      //     .boxIcon {
-      //       cursor: pointer;
-      //     }
-
-      //     .zoom {
-      //       margin-right: 8px;
-      //     }
-      //   }
-
-      //   &__text {
-      //     color: $white;
-      //   }
-      // }
+      &:hover {
+        transform: scale(1.1);
+      }
     }
 
     .image2 {

@@ -103,10 +103,47 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      margin-bottom: 77px;
 
       @include breakpoint-up(large) {
         width: 192px;
         height: 53px;
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  &__personalInfoText {
+    @include breakpoint-up(large) {
+      position: absolute;
+      right: 160px;
+      top: 215px;
+    }
+
+    .personalInfo {
+      margin-bottom: 50px;
+
+      img {
+        height: 53px;
+      }
+
+      .personalDetails {
+        margin-left: 21px;
+        &__title {
+          margin: 0px;
+
+          font-size: $font-med;
+          color: $veryDarkBlue;
+          font-weight: 600;
+          margin-bottom: 12px;
+        }
+
+        &__info {
+          font-size: 15px;
+          color: $darkGrey;
+          font-weight: 600;
+          margin: 0px;
+        }
       }
     }
   }
